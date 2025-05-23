@@ -271,7 +271,7 @@ bool WavesharePanel::isPressed() {
 
 uint16_t WavesharePanel::getBattVoltage() {
     esp_adc_cal_characteristics_t adc_chars;
-    esp_adc_cal_characterize(ADC_UNIT_1, ADC_ATTEN_DB_11, ADC_WIDTH_BIT_12, 1100, &adc_chars);
+    esp_adc_cal_characterize(ADC_UNIT_1, ADC_ATTEN_DB_12, ADC_WIDTH_BIT_12, 1100, &adc_chars);
 
     const int number_of_samples = 20;
     uint32_t sum = 0;
