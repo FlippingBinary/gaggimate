@@ -3,6 +3,11 @@ import preact from '@preact/preset-vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    outDir: '../data',
+    emptyOutDir: true,
+  },
+
   plugins: [preact()],
 
   server: {
