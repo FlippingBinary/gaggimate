@@ -10,5 +10,3 @@ touch data/p/.keep
 cd web || exit
 npm ci
 npm run build
-
-cp -R dist/* ../data/w/
